@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url(https://db.onlinewebfonts.com/c/05549cf893d9543a6c16e1d66f4858b2?family=AmstelvarAlpha+Default);
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background: url('MainImages/startBG3.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 500;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#translatable-text {
+    margin-bottom: 500px;
+}
+
+p {
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Beau Rivage', cursive;
+    bottom: 30px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 60px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 230px;
+    border: white 1px  solid;
+    font-family: "Lora", serif;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.voyage {
+    background-image: url('MainImages/texture2.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 200px; 
+}
+
+h1 span:first-child {
+    margin-top: -30px;
+}

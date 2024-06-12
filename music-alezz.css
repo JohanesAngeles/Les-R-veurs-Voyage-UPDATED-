@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'TNR';
+    font-weight: normal; /* Corrected font-weight */
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('opentype'); /* Corrected font format */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TNR';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('AlezzImages/music-bg.png') no-repeat top center;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'TNR';
+    font-weight: normal; /* Corrected font-weight */
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('opentype'); /* Corrected font format */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TNR';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('AlezzImages/music-bg.png') no-repeat top center;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'TNR';
+    font-weight: normal; /* Corrected font-weight */
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('opentype'); /* Corrected font format */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TNR';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('AlezzImages/music-bg.png') no-repeat top center;
+    background-size: cover;
+}
+
+.swiper {
+    width: 100%; /* Adjusted width to fit the content properly */
+    padding-top: 100px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px; /* Fixed width for the slide */
+    height: 100px; /* Fixed height for the slide */
+}
+
+.swiper-slide img {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+/* Styles for the overlay/background behind the modal */
+.overlay {
+    display: none; /* Hide the overlay by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.music-info {
+    text-align: center;
+    margin-top: 20px;
+}
+.vinyl {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: url('path-to-your-vinyl-image.png') no-repeat center center;
+    background-size: contain;
+    animation: none;
+}
+@keyframes rotateVinyl {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.rotate {
+    animation: rotateVinyl 1s linear;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 1920px; /* Cover the entire width of the viewport */
+    height: 1080px; /* Cover the entire height of the viewport */
+    background-color: rgba(0, 0, 0, 0.4); /* Apply the blur effect to the background */
+    backdrop-filter: blur(100px); /* Apply the blur filter */
+    animation: fadeInModal 0.3s ease forwards; /* Add fadeInModal animation */  
+}
+
+.modal-content {
+    background-image: url('AlezzImages/music-bg.png'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+    background-size: cover; /* Cover the entire content area with the background image */
+    background-position: center; /* Center the background image */
+    position: absolute;
+    top: 50px; /* Adjusted to center vertically */
+    left: 0; /* Adjusted to center horizontally */
+    width: 1920px; /* Cover the entire width of the viewport */
+    height: 1080px;  /* Set the height to fit within the 1080px height of your screen */; /* Limit the maximum height of the modal to 90% of the viewport height */
+    z-index: 100; /* Ensure the modal content is on top */
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.title-bg-display{
+    position: absolute;
+    top: 320px;
+    box-shadow: 0px -15px 15px 25px rgba(0, 0, 0, 0.25), /* Bottom shadow */
+                0px 15px 15px 25px rgba(0, 0, 0, 0.25); /* Top shadow */
+}
+
+.title-music-bg3{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    
+}
+
+#modal-artist {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: 'TNR';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#modal-album {
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: 'TNR';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.vinyl-animation.rotate img {
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.vinly-bg {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.vinly-bg2 {
+    position: absolute;
+    top: 80px;
+    left: 950px;
+    z-index: 4;
+}
+
+.vinyl-image {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    top: 215px; /* Adjust top position as needed */
+    left: 690px; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}

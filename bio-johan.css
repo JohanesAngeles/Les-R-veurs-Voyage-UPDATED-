@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'TNR';
+    font-weight: 50px;
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('woff');
+    }
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background: url('JohanImages/bio-johan-bg2.png') no-repeat top center;
+    background-size: cover;
+    color: #fff;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+    padding: 100px;
+   
+}
+.h2{
+    position: absolute; /* Set the position to absolute */
+    top: 450px; /* Adjust the top position as needed */
+    left: 880px; 
+}
+.h1{
+    position: absolute; /* Set the position to absolute */
+    top: 530px; /* Adjust the top position as needed */
+    left: 680px; 
+}
+
+.h3{
+    position: absolute; /* Set the position to absolute */
+    top: 660px; /* Adjust the top position as needed */
+    left: 930px; 
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+    padding: 100px;
+   
+}
+
+.name{
+    width: 680px;
+    position: absolute; /* Set the position to absolute */
+    top: 1000px; /* Adjust the top position as needed */
+    padding: 60px;
+    
+}
+
+.bio{
+    position: absolute;
+    top: 1200px;
+    left: 240px;
+    font-size: 60px;
+    font-family: 'TNR';
+}
+
+.bio-paragraph{
+    position: absolute;
+    top: 1530px;
+    left: 240px;
+    font-size: 20px;
+    font-family: 'TNR';
+    text-align: justify;
+    width: 35%;
+    line-height: 36px;
+}
+
+.profile-img{
+    position: absolute;
+    top: 1050px;
+    left: 1070px;
+    width: 750px;
+    height: auto;
+    
+}
+
+.coderkidz{
+    position: absolute;
+    top: 1750px;
+    left: 240px;
+    width: 680px;
+    height: auto;
+}
+
+.bio-paragraph2_1{
+    position: absolute;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'TNR';
+    width: 36%;
+    top: 1730px;
+    left: 1070px;
+    line-height: 34px;
+}
+
+.bio-paragraph2_2{
+    position: absolute;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'TNR';
+    width: 36%;
+    top: 2100px;
+    left: 1070px;
+    line-height: 34px;
+}
+
+.bio-paragraph2_3{
+    position: absolute;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'TNR';
+    width: 36%;
+    top: 2400px;
+    left: 1070px;
+    line-height: 34px;
+}
+
+.video-frame-img{
+    position: absolute;
+    position: absolute;
+    top: 2700px;
+    left: 800px;
+    width: 1016px;
+    height: auto;
+}
+
+.video-frame-paragraph{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'TNR';
+    text-align: justify;
+    width: 20%;
+    top: 2700px;
+    left: 240px;
+    line-height: 34px;
+}
+
+.bio-video{
+    position: absolute;
+    width: 870px;
+    height: auto;
+    left: 875px;
+    top: 2700px;
+}
+
+.achievment_1{
+    position: absolute;
+    top: 3600px;
+    left: 430px;
+   
+}
+
+.achievment_2{
+    position: absolute;
+    top: 4015px;
+    left: 750px;
+    
+}
+
+.achievment_3{
+    position: absolute;
+    top: 3795px;
+    left: 1150px;
+  
+}
+
+.I{
+    position: absolute;
+    top: 5020px;
+    left: 530px;
+}
+
+.am{
+    position: absolute;
+    top: 5120px;
+    left: 730px;
+    
+}
+.worthy{
+    position: absolute;
+    top: 5330px;
+    left: 925px;
+}
+
+.of{
+    position: absolute;
+    top: 5550px;
+    left: 625px;
+}
+
+.all{
+    position: absolute;
+    top: 5570px;
+    left: 800px;
+}
+
+.of2{
+    position: absolute;
+    top: 5750px;
+    left: 1180px;
+}
+
+.myDesire{
+    position: absolute;
+    top: 5800px;
+    left: 480px;
+}
+
+.quote_paragraph{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'TNR';
+    text-align: justify;
+    width: 20%;
+    top: 6200px;
+    left: 500px;
+    line-height: 36px;
+}
+
+.footer-paragraph{
+    position: absolute;
+    font-size: 20px;
+    font-family: 'TNR';
+    text-align: justify;
+    width: 45%;
+    top: 6955px;
+    left: 565.5px;
+    line-height: 36px;
+    padding-bottom: 400px;
+}
+
+

@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'TNR';
+    font-weight: 50px;
+    src: local('TNR'), url('fonts/OPTITimes-Roman.otf') format('woff');
+    }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('ABImages/bio-ab-bg.png') top/cover no-repeat;
+    color: #fff;
+}
+
+.h2-1{
+    position: absolute;
+    top: 275px;
+    left: 350px;
+}
+
+.h1{
+    position: absolute;
+    top: 315px;
+    left: 340px;
+}
+.h2-2{
+    position: absolute;
+    top: 415px;
+    left: 950px;
+}
+
+.bio-paragraph1{
+    position: absolute;
+    text-align: justify;
+    width: 79.4%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 175px;
+    top: 298px;
+    line-height: 32px;
+}
+
+.babypic-1{
+    position: absolute;
+    left: 562px;
+    top: 710px;
+    width: 431px;
+    height: 428px;
+   
+
+}
+
+.babypic-2{
+    position: absolute;
+    left: 179px;
+    top: 754px;
+    width: 340px;
+
+}
+
+.babypic-3{
+    position: absolute;
+    left: 1033.2px;
+    top: 754px;
+    width: 340px;
+
+}
+
+.bio-paragraph2{
+    position: absolute;
+    text-align: justify;
+    width: 53.8%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 175px;
+    top: 746.5px;
+    line-height: 32px;
+}
+
+.beda-pic{
+    position: absolute;
+    left: 885px;
+    top: 773px;
+    width: 445px;
+}
+
+.ust-pic{
+    position: absolute;
+    left: 402.6px;
+    top: 2048px;
+    width: 477px;
+}
+
+.bioparagraph3{
+    position: absolute;
+    text-align: justify;
+    width: 28%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 1009px;
+    top: 2020px;
+    line-height: 32px;
+}
+
+.bioparagraph4{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 2450px;
+    line-height: 32px;
+}
+
+.bioparagraph5{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 2580px;
+    line-height: 32px;
+}
+
+.bioparagraph6{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 2835px;
+    line-height: 32px;
+}
+
+.nu-pic1{
+    position: absolute;
+    left: 735px;
+    top: 3200px;
+    width: 431px;
+    height: 428px;
+}
+
+.nu-pic2{
+    position: absolute;
+    left: 354px;
+    top: 3243px;
+    width: 341px;
+}
+
+.nu-pic3{
+    position: absolute;
+    left: 1208px;
+    top: 3243px;
+    width: 341px;
+
+}
+
+.bioparagraph7{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 3678px;
+    line-height: 32px;
+}
+
+.bioparagraph8{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 3905px;
+    line-height: 32px;
+}
+
+.bernie-pic1{
+    position: absolute;
+    left: 781px;
+    top: 4212px;
+    width: 341px;
+}
+
+.bernie-pic2{
+    position: absolute;
+    left: 781px;
+    top: 4595px;
+    width: 341px;
+}
+
+.movie-pic2{
+    position: absolute;
+    left: 398px;
+    top: 4595px;
+    width: 341px;
+}
+
+.movie-pic1{
+    position: absolute;
+    left: 398px;
+    top: 4255px;
+    width: 341px;
+}
+
+.chappell-pic{
+    position: absolute;
+    left: 1165.2px;
+    top: 4255px;
+    width: 341px;
+}
+
+.ts-pic{
+    position: absolute;
+    left: 1165.2px;
+    top: 4595px;
+    width: 341px;
+}
+
+.bioparagraph9{
+    position: absolute;
+    text-align: justify;
+    width: 54%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 438px;
+    top: 5085px;
+    line-height: 32px;
+}
+
+.who_am_i{
+    position: absolute;
+    left: 795px;
+    top: 5245px;
+    width: 341px;
+}
+
+.bioparagraph10{
+    position: absolute;
+    text-align: justify;
+    width: 54%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 438px;
+    top: 5360px;
+    line-height: 32px;
+}
+
+.bioparagraph11{
+    position: absolute;
+    text-align: justify;
+    width: 54%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 438px;
+    top: 5470px;
+    line-height: 32px;
+}
+
+.bioparagraph12{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 5830px;
+    line-height: 32px;
+}
+
+.i_am_driven{
+    position: absolute;
+    text-align: justify;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 6025px;
+    line-height: 32px;
+}
+
+.i_hope{
+    position: absolute;
+    text-align: justify;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 6198px;
+    line-height: 32px;
+}
+
+.my_dream{
+    position: absolute;
+    text-align: justify;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 6360px;
+    line-height: 32px;
+}
+
+.i_aspire{
+    position: absolute;
+    text-align: justify;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 6530px;
+    line-height: 32px;
+}
+
+.paragraph1-qoute{
+    position: absolute;
+    text-align: justify;
+    width: 44%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 710px;
+    top: 6015px;
+    line-height: 32px;
+}
+
+.paragraph2-quote{
+    position: absolute;
+    text-align: justify;
+    width: 51%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 570px;
+    top: 6188px;
+    line-height: 32px;
+}
+
+.paragraph3-quote{
+    position: absolute;
+    text-align: justify;
+    width: 44%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 710px;
+    top: 6350px;
+    line-height: 32px;
+}
+
+.paragraph4-quote{
+    position: absolute;
+    text-align: justify;
+    width: 49%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 620px;
+    top: 6520px;
+    line-height: 32px;
+}
+
+
+.lastparagraph{
+    position: absolute;
+    text-align: justify;
+    width: 62.5%;
+    font-family: 'TNR';
+    font-size: 20px;
+    left: 354px;
+    top: 6700px;
+    line-height: 32px;
+}
+
+.footer{
+    position: absolute;
+    left: 435px;
+    top: 7030px;
+    padding-bottom: 340px;
+}
+
+.who_am_i {
+    transform: scale(0) rotate(30deg); /* Initial state for the animation */
+}
+
+
+/*.typing-effect::after {
+    content: "|"; /* Cursor blinking after the text */
+   /* animation: cursor-blink 0.7s infinite alternate; /* Cursor blinking animation */
+/*}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}*/
+
+
+
+
+
+

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Room - Alezz</title>
+    <link rel="stylesheet" href="music-alezz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" onclick="openModal(0)">
+                <img src="AlezzImages/yes or no - album.png" alt="Yes or No - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(1)">
+                <img src="AlezzImages/eternal sunshine - album.png" alt="Eternal Sunshine - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(2)">
+                <img src="AlezzImages/the boy is mine - album.png" alt="The Boy is Mine - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(3)">
+                <img src="AlezzImages/jump -album.png" alt="Jump - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(4)">
+                <img src="AlezzImages/magic soap - album.png" alt="Magic Soap - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(5)">
+                <img src="AlezzImages/dis-ease - album.png" alt="Dis-ease - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(6)">
+                <img src="AlezzImages/locked out loud of heaven -album.png" alt="Locked out Loud of Heaven - Album">
+            </div>
+            <div class="swiper-slide" onclick="openModal(7)">
+                <img src="AlezzImages/ghost - album.png" alt="Ghost - Album">
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    
+
+    <!-- The Modal -->
+<div id="musicModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" alt="" class="title-music-bg3"> <!-- Moved title image here -->
+       
+        <p id="modal-artist">Artist: </p>
+        <p id="modal-album">Album: </p>
+
+
+
+        <img src="AlezzImages/title-bg-display.png" alt="" class="title-bg-display">
+    </div>
+</div>
+
+
+      <!-- The Vinyl Modal -->
+<div id="vinylModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeVinylModal()">&times;</span>
+        <div class="vinyl-animation">
+            <img src="" class="vinyl-image" />
+            <img src="AlezzImages/vinyl-bg.png" alt="" class="vinly-bg">
+            <img src="AlezzImages/vinyl - thong.png" alt="" class="vinly-bg2">
+        </div>
+    </div>
+</div>
+
+
+
+</section>
+
+    <!-- Include Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    var musicData = [
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Yes or No - title.png",
+                "class": "title-img-1"
+            },
+            "vinylImg": "AlezzImages/yes or no - vinyl.png",
+            "artist": "Jungkook",
+            "album": "Golden",
+            "music": "AlezzAlbum/Yes or No.mp3"
+        },
+     
+            {
+             "img": "", 
+              "titleImg": {
+                "src": "AlezzImages/eternal sunshine - title.png",
+                "class":"titlle-img2",
+              },
+            "vinylImg": "AlezzImages/eternal sunshine - vinyl.png",
+            "artist": "Ariana Grande",
+            "album": "Eternal Sunshine",
+            "music": "AlezzAlbum/eternal sunshine.mp3"
+            },
+            {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/that boy is mine - title.png",
+                "class": "title-img-3"
+            },
+            "vinylImg": "AlezzImages/the boy is mine - vinyl.png",
+            "artist": "Ariana Grande",
+            "album": "Eternal Sunshine",
+            "music": "AlezzAlbum/the boy is mine.mp3"
+        },
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Jump - title.png",
+                "class": "title-img-4"
+            },
+            "vinylImg": "AlezzImages/jump - vinyl.png",
+            "artist": "Tyla",
+            "album": "TYLA",
+            "music": "AlezzAlbum/Jump.mp3"
+        },
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Magic Shop - title.png",
+                "class": "title-img-5"
+            },
+            "vinylImg": "AlezzImages/magic shop - vinyl.png",
+            "artist": "BTS",
+            "album": "Love Yourself 結 'Answer'",
+            "music": "AlezzAlbum/Magic Shop.mp3"
+        },
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Dis-ease - title.png",
+                "class": "title-img-6"
+            },
+            "vinylImg": "AlezzImages/dis-ease - vinyl.png",
+            "artist": "BTS",
+            "album": "BE",
+            "music": "AlezzAlbum/dis-ease.mp3"
+        },
+   
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Locked Out of Heaven - title.png",
+                "class": "title-img-8"
+            },
+            "vinylImg": "AlezzImages/locked out loud of heaven - vinyl.png",
+            "artist": "Locked Out Of Heaven",
+            "album": "Unorthodox Jukebox",
+            "music": "AlezzAlbum/Locked Out Of Heaven.mp3"
+        },
+        {
+            "img": "",
+            "titleImg": {
+                "src": "AlezzImages/Ghost - title.png",
+                "class": "title-img-9"
+            },
+            "vinylImg": "AlezzImages/ghost - vinyl.png",
+            "artist": "Justin Bieber",
+            "album": "Justice",
+            "music": "AlezzAlbum/Ghost.mp3"
+        },
+        
+    ];
+
+    var audio = new Audio();
+    var currentMusicIndex = -1;
+
+    function updateMusicDetails(index) {
+    var adjustedIndex = index;
+    console.log("Received index:", adjustedIndex);
+    if (currentMusicIndex !== adjustedIndex) {
+        currentMusicIndex = adjustedIndex;
+        var musicInfo = musicData[adjustedIndex];
+
+        console.log("Updating to:", musicInfo);
+
+        // Set the title image from the musicData
+        var titleImageElement = document.querySelector('.title-music-bg3');
+        titleImageElement.src = musicInfo.titleImg.src;
+
+        // Update the artist and album text
+        document.querySelector('#modal-artist').textContent = "Artist: " + musicInfo.artist;
+        document.querySelector('#modal-album').textContent = "Album: " + musicInfo.album;
+
+        // Update the title image's alt attribute (or src if you prefer)
+        titleImageElement.alt = musicInfo.titleImg.alt; // or titleImageElement.src = musicInfo.titleImg.src;
+
+        // Set and play the audio
+        audio.src = musicInfo.music;
+
+        // Reset previous animation state
+        var vinylImageElement = document.querySelector('.vinyl-image');
+        vinylImageElement.src = musicInfo.vinylImg;
+        vinylImageElement.style.animation = "none";
+        void vinylImageElement.offsetWidth; // Trigger reflow
+        vinylImageElement.style.animation = null;
+
+        // When audio metadata is loaded, get the duration and start the rotation
+        audio.onloadedmetadata = function() {
+            var desiredDurationInSeconds = 3;
+            var duration = audio.duration; // Get the duration of the song in seconds
+            var animationDuration = desiredDurationInSeconds + 's'; // Create a duration string in seconds
+
+            // Apply rotation animation with the song duration
+            vinylImageElement.style.animation = `spin ${animationDuration} linear infinite`;
+
+            // Start the audio playback
+            audio.play();
+
+            // Start the rotation
+            var vinylAnimation = document.querySelector('.vinyl-animation1');
+            vinylAnimation.classList.add('rotate');
+        };
+
+        // Ensure the animation stops when the song ends
+        audio.onended = function() {
+            var vinylAnimation = document.querySelector('.vinyl-animation1');
+            vinylAnimation.classList.remove('rotate');
+            vinylImageElement.style.animation = "none"; // Reset the animation to stop the rotation
+        };
+    }
+}
+
+function openModal(index) {
+    var musicInfo = musicData[index];
+    document.getElementById('modal-artist').textContent = "Artist: " + musicInfo.artist;
+    document.getElementById('modal-album').textContent = "Album: " + musicInfo.album;
+
+    // Set the title image
+    var titleImageElement = document.querySelector('.title-music-bg3');
+    titleImageElement.src = musicInfo.titleImg.src;
+
+    var modal = document.getElementById("musicModal");
+    modal.style.display = "block";
+    setTimeout(function() {
+        openVinylModal(musicInfo.vinylImg);
+    }, 5000); // 5000 milliseconds = 5 seconds
+}
+
+
+function closeModal() {
+    var modal = document.getElementById("musicModal");
+    modal.style.display = "none";
+}
+
+
+
+function openVinylModal(vinylImg) {
+    var vinylImageElement = document.querySelector('.vinyl-image');
+    vinylImageElement.src = vinylImg;
+
+    var modal = document.getElementById("vinylModal");
+    modal.style.display = "block";
+}
+
+function closeVinylModal() {
+    var modal = document.getElementById("vinylModal");
+    modal.style.display = "none";
+}
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "3",
+            coverflowEffect: {
+                rotate: 10,
+                stretch: 150,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false, // Set to false to remove shadows
+            },
+            loop: true,
+            initialSlide: 0,
+            on: {
+            slideChange: function () {
+                var activeIndex = this.realIndex;
+                console.log("Slide changed to:", activeIndex);
+
+                // Update music details based on the active slide index
+                updateMusicDetails(activeIndex);
+            }
+        }
+        });
+    </script>
+    
+</body>
+</html>

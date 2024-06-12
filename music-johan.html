@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Room - Johan</title>
+    <link rel="stylesheet" href="music-johan.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<section class="vinyl">
+    <div class="Swiper mySwiper swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="JohanImages/supernatural - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/espresso - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/positions - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/spruce - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/art - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/stupid_love - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/ICDIWABH - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/why_try - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/IDDD - album.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="JohanImages/yer_or_no - album.png" alt="">
+            </div>
+            <!-- Add more swiper slides here -->
+            
+        </div>
+    </div>
+
+
+    <div class="title-song">
+        <img src="JohanImages/title - music - bg2.png" alt="" class="title-music-bg2">
+        <img src="JohanImages/title - music - bg.png" alt="" class="title-music-bg">
+        <img src="" alt="" class="title-music-bg3">
+        <P class="Artist">Artist: </P>
+        <p class="Album">Album: </p>
+    </div>
+    
+
+
+    <div class="vinyl-animation rotate">
+        <img src="" class="vinyl-image vinyl-animation1" />
+        <img src="JohanImages/title - music - bg2.png" alt="" class="title-music-bg2">
+    </div>
+</section>
+
+<section class="header">
+    <div class="top-10-header">
+        <img src="JohanImages/Top 10 - Johan.png" alt="" class="title-header">
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var musicData = [
+        {
+            "img": "",
+            "titleImg": {
+                "src": "JohanImages/Yes or No - title.png",
+                "class": "title-img-1"
+            },
+            "artist": "Jungkook",
+            "album": "Golden",
+            "music": "JohanAlbum/Yes or No.mp3"
+        },
+     
+            {
+             "img": "JohanImage/espresso - album.png", 
+              "titleImg": {
+                "src": "JohanImages/Supernatural - title3.png",
+                "class":"titlle-img2",
+              },
+            "vinylImg": "JohanImages/supernatural - vinyl.png",
+            "artist": "Ariana Grande",
+            "album": "Eternal Sunshine",
+            "music": "JohanAlbum/Ariana Grande - supernatural (lyric visualizer).mp3"
+            },
+            {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Espresso - title.png",
+                "class": "title-img-3"
+            },
+            "vinylImg": "JohanImages/espresso - vinyl.png",
+            "artist": "Sabrina Carpenter",
+            "album": "Espresso",
+            "music": "JohanAlbum/espresso.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Positions title.png",
+                "class": "title-img-4"
+            },
+            "artist": "Ariana Grande",
+            "album": "Positons",
+            "music": "JohanAlbum/positions.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Spruce - title.png",
+                "class": "title-img-5"
+            },
+            "artist": "Tori Kelly (feat. Kim Chaewon of LE SSERAFIM)",
+            "album": "Tori.",
+            "music": "JohanAlbum/spruce.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Art - title.png",
+                "class": "title-img-6"
+            },
+            "artist": "Tyla",
+            "album": "Tyla",
+            "music": "JohanAlbum/ART.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Stupid In Love - title.png",
+                "class": "title-img-7"
+            },
+            "artist": "MAX (feat. Kim Chaewon of LE SSERAFIM)",
+            "album": "MAX",
+            "music": "JohanAlbum/STUPID IN LOVE.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/I Can Do It With A Broken Heart - title 3.png",
+                "class": "title-img-8"
+            },
+            "artist": "Taylor Swift",
+            "album": "The Tortured Poets Department",
+            "music": "JohanAlbum/I Can Do It With a Broken Heart.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/Why Try - title.png",
+                "class": "title-img-9"
+            },
+            "artist": "Ariana Grande",
+            "album": "My Everything",
+            "music": "JohanAlbum/Why Try.mp3"
+        },
+        {
+            "img": "JohanImages/espresso - album.png",
+            "titleImg": {
+                "src": "JohanImages/I Don’t Do Dr_gs - title.png",
+                "class": "title-img-10"
+            },
+            "artist": "Doja Cat (Ft. Ariana Grande)",
+            "album": "Planet Her",
+            "music": "JohanAlbum/I Don't Do Drugs.mp3"
+        } 
+    ];
+
+    var audio = new Audio();
+    var currentMusicIndex = -1;
+
+    function updateMusicDetails(index) {
+        // Adjusting the index by +1 seems unnecessary for the current logic
+        var adjustedIndex = index;
+        console.log("Received index:", adjustedIndex);
+        if (currentMusicIndex !== adjustedIndex) {
+            currentMusicIndex = adjustedIndex;
+            var musicInfo = musicData[adjustedIndex];
+
+            console.log("Updating to:", musicInfo);
+
+            // Set the title image from the musicData
+            var titleImageElement = document.querySelector('.title-music-bg3');
+            titleImageElement.src = musicInfo.titleImg.src;
+
+            // Update the artist and album text
+            document.querySelector('.Artist').textContent = "Artist: " + musicInfo.artist;
+            document.querySelector('.Album').textContent = "Album: " + musicInfo.album;
+
+            // Set and play the audio
+            audio.src = musicInfo.music;
+       
+
+               // Reset previous animation state
+        var vinylImageElement = document.querySelector('.vinyl-image');
+        vinylImageElement.src = musicInfo.vinylImg;
+        vinylImageElement.style.animation = "none";
+        void vinylImageElement.offsetWidth; // Trigger reflow
+        vinylImageElement.style.animation = null;
+
+        // When audio metadata is loaded, get the duration and start the rotation
+    audio.onloadedmetadata = function() {
+    var desiredDurationInSeconds = 3;
+    var duration = audio.duration; // Get the duration of the song in seconds
+    var animationDuration = desiredDurationInSeconds + 's'; // Create a duration string in seconds
+
+    // Apply rotation animation with the song duration
+    vinylImageElement.style.animation = `spin ${animationDuration} linear infinite`;
+
+    // Start the audio playback
+    audio.play();
+
+            // Start the rotation
+            var vinylAnimation = document.querySelector('.vinyl-animation1');
+            vinylAnimation.classList.add('rotate');
+        };
+
+        // Ensure the animation stops when the song ends
+        audio.onended = function() {
+            var vinylAnimation = document.querySelector('.vinyl-animation1');
+            vinylAnimation.classList.remove('rotate');
+            vinylImageElement.style.animation = "none"; // Reset the animation to stop the rotation
+        };
+    }
+}
+
+    // Initialize the Swiper
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 3,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 150,
+            modifier: 2,
+            slideShadows: false,
+        },
+        loop: true,
+        initialSlide: 3,
+        on: {
+            slideChange: function () {
+                var activeIndex = this.realIndex;
+                console.log("Slide changed to:", activeIndex);
+
+                // Update music details based on the active slide index
+                updateMusicDetails(activeIndex);
+            }
+        }
+    });
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odyssey</title>
+    <link rel="stylesheet" href="bio-johan.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+
+</head>
+<body>
+
+<section class="odyssey-section ">
+    <section class="title-section">
+        <img class="h2" src="JohanImages/Coding of Dreams-h2.png" >
+        <img src="JohanImages/THE ODYSSEY-H1.png" class="h1" > 
+        <img src="JohanImages/Biography of and by Johanes Angeles-H3.png" class="h3 ">
+    </section>
+
+    <section class="bio-section">
+        <img src="JohanImages/I’m Johanes Angeles-name.png" alt="" class="name">
+
+        <img src="JohanImages/biopic1.png" alt="" class="profile-img ">
+
+        <p class="bio">You can call me Johan. <br>
+            I'm 21 years old, proudly <br> hail from Marikina City.</p>
+        <p class="bio-paragraph">A Bachelor of Science in Information Technology with a specialization in mobile and web application development. This program has been a perfect fit for my interests and aspirations, providing me with a solid foundation in both theoretical and practical aspects of technology.</p>
+
+        <img src="JohanImages/biopic2.png" alt="" class="coderkidz">
+        <p class="bio-paragraph2_1">Throughout my academic career, I have successfully developed more than five systems, all of which were part of my school projects. These projects have been instrumental in honing my skills and preparing me for the challenges of the tech industry. Among these systems, my most notable achievement is the pet recording system, a project executed through Eclipse using Java Swing. This project was a collaborative effort, and I was one of the two main programmers and developers. The pet recording system stands out not only because of its complexity and functionality but also because of the satisfaction it brought to the users and the technical proficiency it demanded from me.</p>
+        <p class="bio-paragraph2_2">My academic journey has been marked by consistent excellence. In senior high school, I was recognized as an honors student and graduated with high honors. This streak of academic success continued into my college years, where I have been a consistent Dean's Lister. These achievements reflect my dedication to my studies and my passion for the field of information technology. I have always believed that hard work and determination are the keys to success, and my academic record is a testament to this belief.</p>
+        <p class="bio-paragraph2_3">In addition to my academic pursuits, I have been actively involved in various extracurricular activities and group projects. These experiences have not only enriched my knowledge but also helped me develop essential soft skills such as teamwork, communication, and problem-solving. Working on group projects, especially the pet recording system, has taught me the importance of collaboration and the value of diverse perspectives in creating effective solutions.</p>
+
+        <img src="JohanImages/videoframe.png" alt="" class="video-frame-img">
+        <p class="video-frame-paragraph">Looking ahead, I am excited about the future and the opportunities that lie ahead in the field of information technology. My goal is to continue learning and growing, both as a student and as a professional. I am particularly interested in further developing my skills in mobile and web application development and exploring new technologies that can make a positive impact on society. With a strong foundation and a clear vision, I am confident that I can achieve my aspirations and contribute meaningfully to the tech industry.</p>
+        <video src="JohanImages/vid2.mp4 " controls autoplay loop class="bio-video"></video>
+    </section>
+
+    <section class="achievments-section">
+        <img src="JohanImages/pic3.png" alt="" class="achievment_1 reveal" data-aos="fade-up" data-aos-delay="1000">
+        <img src="JohanImages/pic4.png" alt="" class="achievment_2 reveal" data-aos="fade-up" data-aos-delay="1500">
+        <img src="JohanImages/pic5.png" alt="" class="achievment_3 reveal" data-aos="fade-up" data-aos-delay="2000">
+    </section>
+
+    <section class="quote-section">
+        <img src="JohanImages/I-quote.png" alt="" class="I">
+        <img src="JohanImages/AM-quote.png" alt="" class="am">
+        <img src="JohanImages/WORTHY-quote.png" alt="" class="worthy">
+        <img src="JohanImages/OF-quote.png" alt="" class="of">
+        <img src="JohanImages/ALL-quote.png" alt="" class="all">
+        <img src="JohanImages/OF2-quote.png" alt="" class="of2">
+        <img src="JohanImages/MY DESIRES-quote.png" alt="" class="myDesire">
+    </section>
+
+    <section class="quote_paragraph1">
+    <p class="quote_paragraph">This affirmation resonates deeply with me and serves as a guiding principle in my life. It reminds me that I deserve to achieve my dreams and ambitions, and it fuels my motivation to strive for success. By believing in my worth and capabilities, I am empowered to pursue excellence in my studies, engage in meaningful projects, and continuously strive for personal and professional growth. This mindset reinforces my commitment to achieving my goals and realizing my full potential.</p>
+    </section>
+
+    <section class="footer-paragraph">
+        <p>My journey so far has been one of continuous learning and achievement. From my roots in Marikina City to my academic endeavors at the National University, I have always strived for excellence. With a blend of technical skills, academic achievements, and a passion for innovation, I am eager to take on new challenges and make a difference in the world of information technology.</p>
+    </section>
+
+</section>
+    <!---- <script src="biography-johan.js"></script> !----->
+    <script>
+        ScrollReveal({
+           // reset: true,
+            distance: '60px',
+            duration: 800,
+            delay: 400,
+        });
+
+        //for title animation
+        ScrollReveal().reveal('.h2, .I, .worthy, .all, .myDesire', {delay: 500, origin: 'left'});
+        ScrollReveal().reveal('.am, .of, .of2', {delay: 500, origin: 'right'});
+        ScrollReveal().reveal('.h1', {delay: 1000, origin: 'right'});
+        ScrollReveal().reveal('.h3', {delay: 1200, origin: 'bottom'});
+
+        //for for bio animation
+        ScrollReveal().reveal('.bio-section .name', {delay: 1500, origin: 'top'});
+        ScrollReveal().reveal('.bio, .bio-paragraph', {delay: 2000, origin: 'left'});
+        ScrollReveal().reveal('.bio-paragraph', {delay: 2500, origin: 'left'});
+        ScrollReveal().reveal('.profile-img', {delay: 3000, origin: 'right'});
+
+        ScrollReveal().reveal('.coderkidz', {delay: 3500, origin: 'top'});
+        ScrollReveal().reveal('.bio-paragraph2_1', {delay: 4500, origin: 'left'});
+        ScrollReveal().reveal('.bio-paragraph2_2', {delay: 4800, origin: 'right'});
+        ScrollReveal().reveal('.bio-paragraph2_3', {delay: 5100, origin: 'left'});
+        
+        //for for vid bio animation
+        ScrollReveal().reveal('.video-frame-img, .bio-video', {delay: 5500, origin: 'top'});
+        ScrollReveal().reveal('.video-frame-paragraph', {delay: 5500, origin: 'bottom'});
+
+        ScrollReveal().reveal('.quote_paragraph', {delay: 1000, origin: 'left'});
+        ScrollReveal().reveal('.footer-paragraph', {delay: 1000, origin: 'right'});
+        
+    </script>
+        <!--achievments animation-->
+            <script>
+                AOS.init();
+            </script>
+</body>
+</html>
